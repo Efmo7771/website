@@ -1,0 +1,56 @@
+nvm   (Es una aplicación para manejar versiones de node)
+
+desde el terminal:
+
+nvm list { Nos da las versiones instaladas y cual está activa}
+nvm -list { Nos da las opciones disponibles}
+nvm instal 20.20.10 {instala la version que señalamos}
+nvm use 20.10.3   {Activa la version que señalamos}
+
+
+
+--------------------------------------------------
+npm init (crea un proyecto en node para backend)
+-----------------------------------------------------
+
+PAQUETES EXTRAS {SE INSTALAN DESDE EL TERMINAL}
+------------------
+dotenv {Configura las variables de entorno que se especifican en el archivo .env  PUERTOS USUARIOS CLAVES ETC.}
+npm i dotenv
+
+ --   import {config} from "dotenv"
+      config()
+
+* El archivo .env y la carpeta node_modules deben ir dentro del archivo .gitignore para que NO!!! sean procesados o llevados en 
+    el proceso de Build (construcción), o durante el respaldo en el repositorio de git.
+---------------------    
+env-var {Permite tipear o dar tipado a las variables de entorno contenidas en el archivo .env}
+npm install env-var
+
+-- import  env from "env-var"
+-----------------------
+json-server    Te convierte en un servidor a partir de Archivos (db.json  o db.json5) en formato jason (objetos)
+               es decir que puedes ofrecer datos e información que pueden ser leidos por otros clientes fino!!!
+
+npm i json-server { Se debe agregar en el archivo package.json  la instruccion "start" : "json-server --watch db.json"} 
+
+
+
+PROYECTO server
+==========================
+
+// Función asincrónica agnóstica autoconvocada
+// agnóstica por no tener nombre
+// se invoca con el doble paréntesis ()
+(async ()=>{
+    main();
+})()
+
+se instalan dotenv y env-var
+
+se instala express {}
+npm i express
+
+tambien se utiliza el modulo
+path
+const path = require('path') [No requiere instalación ya que es de Node]
